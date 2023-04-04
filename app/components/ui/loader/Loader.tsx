@@ -1,5 +1,4 @@
 import { FC } from 'react'
-
 import spinner from './loader.svg'
 
 

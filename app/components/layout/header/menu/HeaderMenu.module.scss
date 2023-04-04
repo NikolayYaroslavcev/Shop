@@ -1,12 +1,12 @@
 .menu {
 	@apply flex items-center gap-10;
-
 	> nav {
+		@apply mx-auto;
 		> ul {
-			@apply flex items-center gap-6;
+			@apply flex items-center gap-10;
 			> li {
 				> a {
-					@apply relative text-gray ;
+					@apply relative text-gray  ;
 
 					&::after {
 						content: '';
