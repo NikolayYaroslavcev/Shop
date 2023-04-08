@@ -17,17 +17,16 @@ const Shop = () => {
                      backgroundImage: 'url(/images/texture.jpg)'
                  }}
             >
-                {/*{products.map(product => (*/}
-                {/*    <Column size={3} key={product.id}>*/}
-                {/*        <div className='text-white'>*/}
-                {/*            <Image src={product.image[0]} alt={product.name} width={220} height={220}/>*/}
-                {/*            <h2>{product.name}</h2>*/}
-                {/*            <div className=''>{product.price}</div>*/}
-                {/*            <button>ADd to cart</button>*/}
-                {/*        </div>*/}
-                {/*    </Column>*/}
-                {/*))}*/}
-
+                {products.map(product => (
+                    <Column size={3} key={product.id}>
+                        <div className='text-white'>
+                            <Image src={product.image[0]} alt={product.name} width={220} height={220}/>
+                            <h2>{product.name}</h2>
+                            <div className=''>{product.price}</div>
+                            <button>ADd to cart</button>
+                        </div>
+                    </Column>
+                ))}
             </Row>
 
         </Layout>
